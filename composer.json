@@ -1,0 +1,33 @@
+{
+    "name": "ioteducation/gpio",
+    "type": "library",
+    "description": "An extension that works with a simple api to control GPIO's of Raspberry PI 3, using Wiring Pi library",
+    "authors": [
+        {
+            "name": "Felipe",
+            "email": "fe_dominguesche@hotmail.com"
+        }
+    ],
+    "homepage": "https://gpio.ioteducation.com.br",
+    "keywords": ["gpio", "iot", "pi", "pin", "pins", "raspberry", "wiringpi", "wiring pi" ],
+    "support": {
+        "issues": "https://github.com/ioteducation/gpio/issues",
+        "source": "https://github.com/ioteducation/gpio"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "I9IoT\\GPIO\\": "src/gpio/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "I9IoT\\GPIO\\Laravel\\ServiceProvider"
+            ]
+        }
+    }
+}
